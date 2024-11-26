@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 170px;
+    background-color: black;
+}
+
+.sidebar{
+    width: 280px;
+    background: rgb(18, 17, 17);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+header {
+    margin-left: 400px; 
+    padding: 20px; 
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: larger;
+    text-decoration: none;
+}
+.sidebar_nav{
+    background-color: rgb(41, 39, 39);
+    border-radius: 5px;
+    padding: -3px 20px;
+    margin-bottom: 15px;
+}
+.sidebar_nav ul{
+    list-style: none;
+}
+.sidebar_nav ul li{
+    padding: 10px;
+}
+.sidebar_nav ul li a:hover{
+   color: white;}
+
+.sidebar_nav ul li a{ 
+    text-decoration: none;
+    color: rgb(167, 167, 163);
+    font-size: 17px;
+    font-weight: 400;
+}
+.sidebar_nav ul li a i{
+    margin-right: 10px;
+}
+.library::after{
+    content: "+";
+    float: right;
+}
+.create_playlist{
+    background-color: rgb(75, 73, 73);
+    border-radius: 5px;
+    margin-bottom: 7px;
+    height: 120px;
+    padding: 17px;
+}
+
+.sidebar_scroll{
+height: 180px;
+overflow-y: auto;
+width: 240px;
+
+
+}
+.sidebar_scroll::-webkit-scrollbar{
+    background-color: transparent;
+}
+.sidebar_scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 5px;
+}
+.sidebar_scroll:hover::-webkit-scrollbar-thumb{
+    background-color: grey;
+    width: 6px;
+}
+.create_playlist h4{
+    color: beige;
+    font-size: 20px;
+}
+.create_playlist p{
+    color: beige;
+    font-size: 15px;
+    margin-top: 10px;
+    margin: 7px;
+}
+.create_playlist button{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-radius: 18px;
+    margin-bottom: 8px;
+    padding: 4px 13px;
+}
+.create_playlist button:hover{
+
+    padding: 5px 14px;}
+
+.others ul li a{
+    color: beige;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+.others ul li a:hover{
+    text-decoration: underline;
+
+}
+.others ul{
+    list-style: none;
+    margin: 10px;
+}
+.eng_btn{
+   padding: 8px 15px;}
+
+.eng_btn button{
+    border-radius: 20px;
+    padding: 6px 8px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: 3px solid rgb(20, 20, 20);
+}
+.eng_btn button:hover{
+   padding: 8px 20px;
+   border: 3px solid white;
+}
+
+.mainsec{
+    margin-left: 300px;
+    background-color:rgb(18, 17, 17) ;
+    height: 100vh;
+    overflow: auto;
+    border-radius: 15px;
+}
+.mainsec .topnav{
+    padding: 10px 30px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+
+.mainsec .topnav button{
+    border-radius:20px;
+    padding: 5px;
+    background-color: transparent;
+    color: beige;
+    border: 0px;
+    font-weight: 600;
+}
+.mainsec .topnav button:hover{
+        padding: 6px;
+        background-color: white;
+        outline: none;
+        color: black;
+        border: 0px;
+}
+.login{
+    color: beige;
+}
+.mainsec .login .sigin{
+    height: 30px;
+    background-color: white;
+    width: 60px;
+    color: black;
+    border-radius: 20px;
+}
+.mainsec .login .sigin:hover{
+    background-color:rgb(200, 195, 195) ;
+}
+
+.artist{
+    padding: 20px 40px;
+}
+
+.artist h2{
+   
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.artist .card{
+    display: flex;
+    overflow: hidden;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.artist .card .item{
+    min-width: 130px;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    flex-basis: calc(20% - 30px);
+    
+}
+.artist .card .item:hover{
+    padding: 12px;
+}
+.artist .card .item img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.artist .card .item h4{
+    color: beige;
+}
+.artist .card .item h4:hover{
+    text-decoration: underline;
+}
+.artist .playbtn{
+    position: relative;
+    
+}
+.artist .playbtn i{
+    position: absolute;
+    background-color: rgb(7, 171, 7);
+    border-radius: 50%;
+    padding: 8px;
+    right: 10px;
+    top: -25px;
+    opacity: 0;
+}
+.artist .card .item:hover .playbtn i{
+    opacity: 1;
+
+}
